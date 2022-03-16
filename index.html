@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -13,11 +13,12 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
+        <!-- Core theme CSS (incluido Bootstrap)-->
         <link href="css/estilos.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
-        <!-- Navigation-->
+        <!-- Nav-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand" href="#page-top">SportsPhysio</a>
@@ -77,23 +78,23 @@
             </div>
         </section>
         <!-- Servicios-->
-        <section class="page-section bg-light" id="portfolio">
+        <section  id="portfolio">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">SERVICIOS</h2>
                     <h3 class="section-subheading text-muted">Nuestros servicios</h3>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div  class="col-lg-4 col-sm-6 mb-4">
                         <!-- Rehabilitacion Deportiva-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        <div  class="portfolio-item">
+                            <a  class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div  class="portfolio-hover">
+                                    <div  class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
                                 <img class="img-fluid" src="assets/img/images/rehabdeportiva.jpg" alt="..." />
                             </a>
-                            <div class="portfolio-caption">
+                            <div id="destacado">
                                 <div class="portfolio-caption-heading">Rehabilitacion Deportiva</div>
                                 <div class="portfolio-caption-subheading text-muted">Alto Rendimiento</div>
                             </div>
@@ -108,7 +109,7 @@
                                 </div>
                                 <img class="img-fluid" src="assets/img/images/masajes.jpg" alt="..." />
                             </a>
-                            <div class="portfolio-caption">
+                            <div id="destacado">
                                 <div class="portfolio-caption-heading">Kinesiologia y Fisiatria</div>
                                 <div class="portfolio-caption-subheading text-muted">Orientada a todas las edades</div>
                             </div>
@@ -123,7 +124,7 @@
                                 </div>
                                 <img class="img-fluid" src="assets/img/images/nutri.jpg" alt="..." />
                             </a>
-                            <div class="portfolio-caption">
+                            <div id="destacado">
                                 <div class="portfolio-caption-heading">Nutricion</div>
                                 <div class="portfolio-caption-subheading text-muted">Planifica tus comidas</div>
                             </div>
@@ -138,7 +139,7 @@
                                 </div>
                                 <img class="img-fluid" src="assets/img/images/osteopatiaestructural.jpg" alt="..." />
                             </a>
-                            <div class="portfolio-caption">
+                            <div id="destacado">
                                 <div class="portfolio-caption-heading">Osteopatia</div>
                                 <div class="portfolio-caption-subheading text-muted">Tratamiento Global</div>
                             </div>
@@ -153,7 +154,7 @@
                                 </div>
                                 <img class="img-fluid" src="assets/img/images/medical.jpg" alt="..." />
                             </a>
-                            <div class="portfolio-caption">
+                            <div id="destacado">
                                 <div class="portfolio-caption-heading">Medicina Integral</div>
                                 <div class="portfolio-caption-subheading text-muted">Traumatologia, Cardiologia, Reumatologia, Deportologia, Traumatologia Infantil, Cardiologia Infantil, Deportologia infantil</div>
                             </div>
@@ -168,7 +169,7 @@
                                 </div>
                                 <img class="img-fluid" src="assets/img/images/runningguy.jpg" alt="..." />
                             </a>
-                            <div class="portfolio-caption">
+                            <div id="destacado">
                                 <div class="portfolio-caption-heading">Plantillas Ortopedicas</div>
                                 <div class="portfolio-caption-subheading text-muted">Analisis de la Pisada</div>
                             </div>
@@ -243,8 +244,8 @@
                 </ul>
             </div>
         </section>
-        <!-- Team-->
-        <section class="page-section bg-light" id="team">
+        <!-- Equipo-->
+        <section class="page-section" id="team">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Nuestro Equipo</h2>
@@ -287,52 +288,43 @@
                 </div>
             </div>
         </section>
-        <!-- Contact-->
+        <!-- Contacto-->
         <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Contactanos</h2>
                     <h3 class="section-subheading text-muted">Dejanos tu mensaje y nos cominucaremos a la brevedad</h3>
                 </div>
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
                 <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <!-- Name input-->
+                                <!-- Nombre y Apellido-->
                                 <input class="form-control" id="name" type="text" placeholder="Nombre y Apellido *" data-sb-validations="required" />
                                 <div class="invalid-feedback" data-sb-feedback="name:required">Nombre requerido</div>
                             </div>
                             <div class="form-group">
-                                <!-- Email address input-->
+                                <!-- Direccion de Email-->
                                 <input class="form-control" id="email" type="email" placeholder="Email *" data-sb-validations="required,email" />
                                 <div class="invalid-feedback" data-sb-feedback="email:required">Email requerido</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email no valido</div>
                             </div>
                             <div class="form-group mb-md-0">
-                                <!-- Phone number input-->
+                                <!-- Numero de telefono-->
                                 <input class="form-control" id="phone" type="tel" placeholder="Telefono *" data-sb-validations="required" />
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">Numero de telefono requerido</div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
+                                <!-- Mensajet-->
                                 <textarea class="form-control" id="message" placeholder="Mensaje *" data-sb-validations="required"></textarea>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">Mensaje requerido</div>
                             </div>
                         </div>
                     </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
+                    <!-- Enviar mensaje con exito-->
+                    <!--- Esto es lo que los usuarios van a ver cuando el formulario haya sido enviado con exito--->
                     <div class="d-none" id="submitSuccessMessage">
                         <div class="text-center text-white mb-3">
                             <div class="fw-bolder">Gracias por contactarnos!</div>
@@ -341,12 +333,11 @@
                             <a href="https://startbootstrap.com/solution/contact-forms"></a>
                         </div>
                     </div>
-                    <!-- Submit error message-->
+                    <!-- Error al enviar mensaje-->
                     <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
+                    <!--- Esto es lo que los usuarios veran cuando haya un error al enviar el formulario--->
                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error al enviar me!</div></div>
-                    <!-- Submit Button-->
+                    <!-- Boton de enviar-->
                     <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Enviar Mensaje</button></div>
                 </form>
             </div>
@@ -368,8 +359,8 @@
                 </div>
             </div>
         </footer>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio item 1 modal popup-->
+        <!-- Apartado de Servicios-->
+        <!-- item 1 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -378,7 +369,7 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
+                                    <!-- Detalles-->
                                     <h2 class="text-uppercase">Rehabilitacion Deportiva</h2>
                                     <p class="item-intro text-muted">Alto Rendimiento</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/images/rehabdeportiva.jpg" alt="..." />
@@ -394,7 +385,7 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 2 modal popup-->
+        <!-- item 2 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -403,7 +394,7 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
+                                    <!-- Detalles-->
                                     <h2 class="text-uppercase">Kinesiologia y Fisiatria</h2>
                                     <p class="item-intro text-muted">Orientada a todas las edades</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/images/masajes.jpg" alt="..." />
@@ -418,7 +409,7 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 3 modal popup-->
+        <!--item 3 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -427,7 +418,7 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
+                                    <!-- Detalles-->
                                     <h2 class="text-uppercase">Nutricion</h2>
                                     <p class="item-intro text-muted">Planifica tu rutina alimentaria</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/images/nutri.jpg" alt="..." />
@@ -443,7 +434,7 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 4 modal popup-->
+        <!--item 4 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -452,7 +443,7 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
+                                    <!--Detalles-->
                                     <h2 class="text-uppercase">Osteopatia</h2>
                                     <p class="item-intro text-muted">Tratamiento Global</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/images/osteopatiaestructural.jpg" alt="..." />
@@ -468,7 +459,7 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 5 modal popup-->
+        <!--item 5 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -477,7 +468,7 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
+                                    <!-- Detalles-->
                                     <h2 class="text-uppercase">Medicina Integral</h2>
                                     <p class="item-intro text-muted">Traumatologia, Cardiologia, Reumatologia, Deportologia, Traumatologia Infantil, Cardiologia Infantil, Deportologia infantil, Aptos Medicos</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/images/medical.jpg" alt="..." />
@@ -493,7 +484,7 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 6 modal popup-->
+        <!--item 6 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -502,7 +493,7 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
+                                    <!-- Detalles-->
                                     <h2 class="text-uppercase">Plantillas Ortopedicas</h2>
                                     <p class="item-intro text-muted">Analisis de la Pisada</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/images/runningguy.jpg" alt="..." />
@@ -524,10 +515,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
