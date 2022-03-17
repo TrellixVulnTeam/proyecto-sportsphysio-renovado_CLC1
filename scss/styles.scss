@@ -6,8 +6,25 @@ $fondo_primario: #000000;
 $fuente_primaria: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $fuente_secundaria: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
+/* Mixins */
+@mixin fonts {
+    font-size: 1.5rem;
+    font-family: $fuente_primaria;
+}
+@mixin fonts1 {
+    font-size: 1rem;
+    font-family: $fuente_secundaria;
+}
+
+/* Maps */
+$bwscale: (100: #ffffff, 200: #000000, 300:#adff19, 400:#336699, 500: #ffc800, 600: #6c757d, );
+
+
+
+
+
 body { p {
-    color: $color_fuente;
+    color: map-get($bwscale, 300);
     font-size: 15px;
 }
     color: $color_fuente;
@@ -17,44 +34,38 @@ body { p {
 #destacado {
     display: block;
     background-color: $fondo_primario;
-    font-size: 1.5rem;
-    font-family: $fuente_primaria;
+    @include fonts;
     font-weight: 700;
     margin-bottom: 0;
     text-align: center;
     align-items: center;
-    padding: 1 rem;
+    padding: 1rem;
 }
 
-.page-section h3.section-subheading, .page-section .section-subheading.h3 {
-    font-size: 1rem;
+.page-section  {
+    @include fonts1;
     font-weight: 400;
     font-style: italic;
-    font-family: $fuente_secundaria;
     margin-bottom: 4rem;
-    background-color: $fondo_primario;
+    background-color: map-get($bwscale, 200);
 }
 
 #portfolio {
-font-size: 1.5rem;
-font-family: $fuente_primaria;
+@include fonts;
 font-weight: 700;
 margin-bottom: 0;
 }
 
 .section-subheading {
-    font-size: 1rem;
-    font-weight: 400;
-    font-style: italic;
-    font-family: $fuente_secundaria;
-    margin-bottom: 4rem;
+    @include fonts1;
+    @extend .page-section;
 }
 
 section {
     color: $color_fuente;
     background-color: $fondo_primario;
     div {
-    color: $color_fuente;
+    color: map-get($bwscale, 300);
     background-color: $fondo_primario;
 }
 }
