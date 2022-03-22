@@ -45,7 +45,7 @@ body { p {
 .page-section  {
     @include fonts1;
     font-weight: 400;
-    font-style: italic;
+    font-style: normal;
     margin-bottom: 4rem;
     background-color: map-get($bwscale, 200);
 }
